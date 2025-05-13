@@ -1,3 +1,5 @@
+
+/*Project preview */
 document.addEventListener('DOMContentLoaded',()=>{
   const projectModel= document.getElementById('myPreview');
  const projectTitle = document.getElementById('titleProject');
@@ -9,7 +11,7 @@ document.addEventListener('DOMContentLoaded',()=>{
 
   para.addEventListener('click', event => {
 
-    event.preventDefault();
+    event.preventDefault();/*prevent default action of anchor element */
     projectTitle.textContent = para.dataset.title;
     projectImage.src = para.dataset.image;
     projectLink.href = para.dataset.link;
@@ -34,4 +36,13 @@ window.addEventListener('click',(event)=>{
 
 });
 
+/*hamburger navigation */
 
+const hamburgerElement = document.querySelector('.hamburger');
+const navmenu = document.querySelector('#navMenu ul')
+hamburgerElement.addEventListener('click',() => {
+
+  const expanded =hamburgerElement.getAttribute('aria-expanded') === 'true'; /*checks the current value of the aria-expanded attribute. */
+  hamburgerElement.setAttribute('aria-expanded',!expanded);/*set a value ,if true then set false,vice versa */
+  navmenu.classList.toggle('open');
+});
