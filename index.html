@@ -3,26 +3,32 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- SEO meta tags start -->
+    <meta name="description" content="Portfolio of Ashik Kurisingal Antony, web developer and UX enthusiast. Explore projects, skills, and contact information.">
+    <meta name="keywords" content="Ashik Antony, web developer, frontend developer, UX design, HTML CSS JavaScript portfolio, projects, skills">
+    <meta name="author" content="Ashik Kurisingal Antony">
+    <meta property="og:title" content="Ashik Antony - Web Developer Portfolio">
+    <!--meta tags end-->
     <link href="./css/style.css" rel="stylesheet" />
     <script src="./javascript/script.js" defer></script>
     <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
-    <title>portofolio</title>
+    <title>Ashik Antony | Web Developer & UX Designer Portfolio</title><!--for seo , make a good title-->
 </head>
 <body>
     <!--Header -->
     <header class="headerContainer">
         <h1>Ashik Kurisingal Antony</h1>
-        <nav>
+        <nav role="navigation">
            <ul>
-              <li><a href="#about">About Me</a></li>
-              <li><a href="#project">Project</a></li>
-              <li><a href="#skills">Skills</a></li>
-              <li><a href="./contact.html">Contact</a></li>
+              <li><a href="#about" role="link">About Me</a></li>
+              <li><a href="#project" role="link">Project</a></li>
+              <li><a href="#skills" role="link">Skills</a></li>
+              <li><a href="./contact.html" role="link">Contact</a></li>
            </ul>
         </nav>
     </header>
 <!--Main -->
-    <main>
+    <main role="main">
         <!--Introduction area-->
         <section>
             <div class="overlay">
@@ -37,7 +43,7 @@
         <section id="about">
             <div class="about-container">
                 <h2>A little About Me</h2>
-                <img src="./media/myimage.jpg" alt="developer image"/>
+                <img src="./media/myimage.jpg" alt="Ashik Antony profile picture"/>
                 <p>Hey, I am ashik and I'm a web developer with a passion for front end development and design.
                     i had completed bachelor of engineering in computer science and currently doing 
                     a frontend developer course at codecademy.i am passionate in technology.
@@ -48,7 +54,7 @@
         <section id="">
             <div class="passion-container">
                 <div class="passion-heading">
-                    <h3>What i do</h3>
+                    <h3 role="heading">What i do</h3>
                 </div>
                 <div class="passion-items">
                     <div class="passion-img">
@@ -56,7 +62,7 @@
 
                     </div>
                     
-                    <h4>Design</h4>
+                    <h4 role="heading">Design</h4>
                     <p>Design isn't just what a product looks like and feels like on the outside.
                      Design encompasses the internal functionality of a product as well as the overall user experience</p>
                 </div>
@@ -65,7 +71,7 @@
                         <img src="./media/development.png" alt="development icon image"/>
 
                     </div>
-                    <h4>development</h4>
+                    <h4 role="heading">development</h4>
                     <p>With a strong foundation in computer science, 
                         I'm passionate about web design and development.</p>
                 </div>
@@ -74,7 +80,7 @@
                         <img src="./media/involvement.png" alt="involvement icon image"/>
 
                     </div>
-                    <h4>Involvment</h4>
+                    <h4 role="heading">Involvment</h4>
                     <p>i am currently doing freelance projects </p>
                 </div>
             </div>
@@ -126,7 +132,7 @@
                     <span class="close">&times;</span>
                     <h2 id="titleProject">project preview</h2>
                     <img id="imgProject" src="" alt="screenshot of project"/>
-                    <button><a href="" id="linkProject" target="_blank" >Visit Page</a></button>
+                    <button role="button"><a href="" id="linkProject" target="_blank" >Visit Page</a></button>
                     
                 </div>
             </div>
@@ -134,8 +140,8 @@
         </section>
         <!--skill area start-->
         <section id="skills">
-            <div class="skill-container">
-                <h3>Skills</h3>
+            <div class="skill-container" role="generic">
+                <h3 role="heading">Skills</h3>
                 <p>I've been doing web development for about 3 years now,
                      and I'm always eager to learn more in this fast paced industry.
                     some technologies i worked with.</p>
@@ -149,12 +155,12 @@
         </section>
     </main>
     <!--footer-->
-    <footer id="">
-        <div class="footer-container">
+    <footer>
+        <div class="footer-container" role="generic">
             <div class="footer-contact">
-               <a href="#"><img src="./media/git.png" alt="github icon"/></a>
-               <a href="#"><img src="./media/linkedin.png" alt="linkedin icon"/></a>
-               <a href="#"><img src="./media/icons8-instagram-50.png" alt="instagram icon"/></a>
+               <a href="https://github.com/ashikkurisingal3392" title="GitHub" role="link"><img src="./media/git.png" /></a>
+               <a href="https://www.linkedin.com/in/ashik-kurisingal-antony-2031936/" title="Linkedin" role="link"><img src="./media/linkedin.png"/></a>
+               <a href="#" title="Instagram" role="link"><img src="./media/icons8-instagram-50.png" alt="Inastagram image"/></a>
             </div>
             <p>copyright@Ashik Antony</p>
             
