@@ -18,7 +18,10 @@
     <!--Header -->
     <header class="headerContainer">
         <h1>Ashik Kurisingal Antony</h1>
-        <nav role="navigation">
+        <!--Hamburger menu start-->
+        <button class="hamburger" aria-label="Toggle navigation" aria-expanded="false" aria-controls="navMenu">☰</button>
+        <!--hamburger menu end-->
+        <nav id="navMenu" role="navigation">
            <ul>
               <li><a href="#about" role="link">About Me</a></li>
               <li><a href="#project" role="link">Project</a></li>
@@ -29,6 +32,7 @@
     </header>
 <!--Main -->
     <main role="main">
+
         <!--Introduction area-->
         <section>
             <div class="overlay">
@@ -50,8 +54,9 @@
                 <br><br>When iam not in computer, i enjoy listening music and playing cricket</p>
             </div>
         </section>
+
          <!--passion section-->
-        <section id="">
+        <section>
             <div class="passion-container">
                 <div class="passion-heading">
                     <h3 role="heading">What i do</h3>
@@ -85,6 +90,7 @@
                 </div>
             </div>
         </section>
+
 <!--project section start-->
         <section id="project">
             <div class="project-container">
@@ -132,7 +138,7 @@
                     <span class="close">&times;</span>
                     <h2 id="titleProject">project preview</h2>
                     <img id="imgProject" src="" alt="screenshot of project"/>
-                    <button role="button"><a href="" id="linkProject" target="_blank" >Visit Page</a></button>
+                    <button><a href="" id="linkProject" target="_blank" >Visit Page</a></button>
                     
                 </div>
             </div>
@@ -140,8 +146,8 @@
         </section>
         <!--skill area start-->
         <section id="skills">
-            <div class="skill-container" role="generic">
-                <h3 role="heading">Skills</h3>
+            <div class="skill-container">
+                <h3>Skills</h3>
                 <p>I've been doing web development for about 3 years now,
                      and I'm always eager to learn more in this fast paced industry.
                     some technologies i worked with.</p>
